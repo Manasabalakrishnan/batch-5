@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2ecc71, #16a085);
+    text-align: center;
+    color: white;
+}
+
+.container {
+    background: #222;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 50%;
+    height: 900px; /* Adjust this value to set a fixed height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2ecc71;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.movie-details {
+    text-align: left;
+    padding: 20px;
+}
+
+.movie-poster {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.movie-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #16a085;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Movie Search App</h1>
+        <p>Discover and explore your favorite movies like never before with our intuitive Movie Search App, your ultimate cinematic companion.</p>
+       
+        <div class="search-box">
+            <input type="text" id="movieInput" placeholder="Enter movie name">
+            <button onclick="searchMovie()">Search</button>
+        </div>
+         <img align="left"src="ironman.jpg"width="200px" height="300px"> <center><strong>Iron Man</strong></center>
+         <br>*7.9</br>
+         <br>PG-13  2008  126 min</br>
+         <br>
+         
+         <button style="background-color:rgb(17, 13, 13);color: white;">Action</button> 
+         <button style="background-color:rgb(17, 13, 13);border-color:white;color: white;">Adventure</button>
+         <button style="background-color:rgb(17, 13, 13);border-color:white;color:white">Sci-Fi</button>
+         <div id="movieDetails" class="movie-details"></div>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <footer><div align="left">
+            <h4>Plot:</h4>
+        </div>
+            <p>After being heldcaptive in an Afgan caves,billionaire engineer Tony Stark creates a unique weaponized <div align="left">suit of armar to fight evil</p>
+            <div align="left">
+            <h4>Cast:</h4>
+        RobertDowney Jr,Owyneth Paltrow,Terrence Haward 
+        </footer>
+        
+    </div>
+    </body>
+</html>

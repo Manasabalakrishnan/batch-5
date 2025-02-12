@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #004EA2; /* Dark blue background color */
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Ensure the body takes up full viewport height */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+            background-color: #0866C5; /* Slightly lighter blue container */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+        }
+
+        .controls button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .playlist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .playlist li {
+            padding: 10px;
+            border-bottom: 1px solid #2A8CE2; /* Lighter blue line */
+            cursor: pointer;
+            transition: background-color 0.2s; /* Smooth transition for hover effect */
+        }
+
+        .playlist li:hover {
+            background-color: #1278D2; /* Darker blue on hover */
+        }
+
+        .playlist li .time {
+            float: right;
+            color: #ADD8E6; /* Light blue for time */
+        }
+    </style>
+</head>
+<body>
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+    <div class="container">
+        <div class="header">
+            <div class="title">Music Playlist</div>
+            <div class="controls">
+                <button>▶</button>
+                <button>■</button>
+            </div>
+        </div>
+        <ul class="playlist">
+            <li>Kesariya<span class="time">2:46</span></li>
+            <li>Buttabomma<span class="time">8:30</span></li>
+            <li>Anuvanuvu<span class="time">5:01</span></li>
+            <li>Chinnadana neekosam <span class="time">1:31</span></li>
+            <li>Agipulla lanti aadapilla <span class="time">5:05</span></li>
+            <li>Prema swaram<span class="time">2:48</span></li>
+            <li>Butter<span class="time">5:44</span></li>
+            <li>Dangerous<span class="time">5:26</span></li>
+                    </ul>
+    </div>
+</body>
+</html>
